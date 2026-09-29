@@ -1,0 +1,120 @@
+{
+  "scenario_id": 10,
+  "scenario_title": "Group Project算法决策",
+  "metadata": {
+    "target_group": "Z世代",
+    "intent_l1": "问题解决与执行指导",
+    "intent_l2": "代码调试/技术排障",
+    "task_labels": [
+      "计算机编程",
+      "代码",
+      "debug"
+    ]
+  },
+  "script": [
+    {
+      "turn_id": "01",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "咱们现在要做一个通过给定数据集预测是否患有糖尿病的group project，要用到machine learning算法，你现在有什么想法吗？"
+    },
+    {
+      "turn_id": "02",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "我觉得可以先确定一下大概的算法。我知道的两种主流算法：决策树和爬山法，但是不清楚在解决这个问题之中用哪个算法要好一些。"
+    },
+    {
+      "turn_id": "03",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "AI",
+      "action_type": "query",
+      "text": "嗯其实我也不知道。但是我觉得我们可以参考一下网上的论坛？比较这个糖尿病预测算是一个很经典的machine learning问题，让AI看看论坛里怎么说？"
+    },
+    {
+      "turn_id": "04",
+      "event_type": "ai_response",
+      "speaker": "AI",
+      "target": "Alice",
+      "action_type": "direct_answer",
+      "text": "根据Kaggle相关内容，在糖尿病预测这一问题中，多名曾经的获奖者提出mount clibing algorithm(爬山算法)具有优势和更高的预测准确率；决策树亦可与此算法结合使用，能够达到更好的预测效果。"
+    },
+    {
+      "turn_id": "05",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "嗯，那看来咱们最好是结合好这两种算法。"
+    },
+    {
+      "turn_id": "06",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "是的。不过，具体的参数应该怎么办？"
+    },
+    {
+      "turn_id": "07",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "这个让AI去读一下相关的代码，去看看他们效果好的模型是怎么调整参数的就好了。"
+    },
+    {
+      "turn_id": "07",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "task_extraction",
+      "text": "识别到任务：搜索爬山法和决策树模型的参数，正在检索相关代码……"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "OK，我刚刚又看到，这个决策树模型可以选择GBDT树，这个效果更好。可以适当记一下"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "task_extraction",
+      "text": "补充任务：记录GBDT树作为决策树使用，coding时提醒用户。"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "好的，然后我刚才也看了一下，可以在进行分类之前用无监督学习预处理一下数据。这样可以提高准确率"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "task_extraction",
+      "text": "补充任务：记录在进行分类之前用无监督学习预处理数据，coding时提醒用户。"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "没问题，我们稍后汇总一下要注意的事项，然后就可以开始coding了"
+    }
+  ]
+}

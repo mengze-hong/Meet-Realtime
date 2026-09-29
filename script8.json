@@ -1,0 +1,96 @@
+{
+  "scenario_id": 8,
+  "scenario_title": "旧金山酒店预订",
+  "metadata": {
+    "target_group": "Z世代",
+    "intent_l1": "分析规划与建议",
+    "intent_l2": "计划制定",
+    "task_labels": [
+      "策略规划",
+      "知识问答",
+      "信息检索"
+    ]
+  },
+  "script": [
+    {
+      "turn_id": "01",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "咱们马上出发前往旧金山旅游了，酒店定一下呗。"
+    },
+    {
+      "turn_id": "02",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "可以呀。你看这一家怎么样？每晚160美元，位置在市中心很方便。"
+    },
+    {
+      "turn_id": "03",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "我看到另一家酒店了，位置大差不差，每晚140美元。"
+    },
+    {
+      "turn_id": "04",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "但是这一家没有空调啊。虽然他便宜20美元，但万一我们太热怎么办？"
+    },
+    {
+      "turn_id": "05",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "AI",
+      "action_type": "query",
+      "text": "那我们先查一下天气看看吧？要是天气不热，那就没必要。AI，帮我们查一下旧金山近一个星期的天气。"
+    },
+    {
+      "turn_id": "06",
+      "event_type": "ai_response",
+      "speaker": "AI",
+      "target": "Alice",
+      "action_type": "direct_answer",
+      "text": "旧金山下一星期的气温白天均位于17-25摄氏度，夜间13-19摄氏度。按一般人的体感舒适温度，应该不需要空调制冷。"
+    },
+    {
+      "turn_id": "07",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "看来咱们是用不到空调制冷了，要不就第二家……等等，夜间13-19摄氏度，怎么搞得？这个温度有点低啊，看来还是得住有空调的，我们得开空调制热。"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "离谱，看来是这样的。看来我们还是要定第一家酒店。By the way到时候咱们互相提醒着带件厚衣服，我可不想到那边冻死。"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "task_extraction",
+      "text": "识别到任务：将提醒Alice和Bob出发前带好厚衣服加入代办事项。"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "好的，没问题，那我们就定第一家酒店了。"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "scenario_id": 9,
+  "scenario_title": "旧金山旅行计划：租车 or 公共交通",
+  "metadata": {
+    "target_group": "Z世代",
+    "intent_l1": "分析规划与建议",
+    "intent_l2": "计划制定",
+    "task_labels": [
+      "策略规划",
+      "知识问答",
+      "信息检索"
+    ]
+  },
+  "script": [
+    {
+      "turn_id": "01",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "咱们马上去旧金山玩了，听说美国公共交通弄得挺烂的，要不要考虑租个车开？"
+    },
+    {
+      "turn_id": "02",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "行啊，不过成本怎么样呢？最近国际燃油涨价了，而且停车也是个麻烦事。"
+    },
+    {
+      "turn_id": "03",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "AI",
+      "action_type": "query",
+      "text": "AI，帮我检索一下美国旧金山租一天车大概要花多少钱？"
+    },
+    {
+      "turn_id": "04",
+      "event_type": "ai_response",
+      "speaker": "AI",
+      "target": "Alice",
+      "action_type": "direct_answer",
+      "text": "在旧金山的租车成本主要包括租金、油费和停车费。根据Hertz租车平台相关数据，普通轿车一天的租金约为50美元，油费20美元，停车费约50美元每晚，合计用车成本120美元，约合940港元。"
+    },
+    {
+      "turn_id": "05",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "这租个车不便宜啊，尤其是这个停车费，咱们还是看一看公共交通吧"
+    },
+    {
+      "turn_id": "06",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "嗯嗯，咱们先确定一下去哪些地点？"
+    },
+    {
+      "turn_id": "07",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "先暂定金门大桥、渔人码头、加州大学伯克利分校、斯坦福大学和硅谷吧。"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "嚯。这几个地方彼此离得可不近啊，这个路线得好好规划一下，等会甩给AI做一下看看吧。"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "task_extraction",
+      "text": "识别到任务：路线规划，找到一条途径金门大桥、渔人码头、加州大学伯克利分校、斯坦福大学和硅谷的路线，并尽量做到少绕路、不走回头路。"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "OK. 我刚刚看了一下AI在后台整的这个路线，我发现硅谷这一段坐公共交通太远了，要不这里打一段车吧，速度快很多，而且可以体验一下waymo无人驾驶的士。"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "好的，正有此意"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "action_execution",
+      "text": "修改交通方式：斯坦福到硅谷的交通方式改为waymo无人出租车，正在重新计算路线总耗时和可行性。"
+    }
+  ]
+}

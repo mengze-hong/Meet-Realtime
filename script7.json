@@ -1,0 +1,104 @@
+{
+  "scenario_id": 7,
+  "scenario_title": "跳槽决策",
+  "metadata": {
+    "target_group": "资深中产",
+    "intent_l1": "比较/选择建议",
+    "intent_l2": "计划制定",
+    "task_labels": [
+      "策略规划",
+      "知识问答",
+      "选择推荐"
+    ]
+  },
+  "script": [
+    {
+      "turn_id": "01",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "哎，我这在咱们公司很久没有晋升了。我现在年纪也大了，可能短时间内很难再晋升了。如果换个公司从头来过，会不会更好啊？"
+    },
+    {
+      "turn_id": "02",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "你是想跳槽吗？"
+    },
+    {
+      "turn_id": "03",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "是的。我觉得不如搏一搏看看，没准有更好的机会。"
+    },
+    {
+      "turn_id": "04",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "AI",
+      "action_type": "query",
+      "text": "这个恐怕得谨慎一点。现在大环境下就业形式不好，你做决定之前先看一看你这个年龄的就业率和薪资中位数吧吧。AI，帮我查一下45岁IT前端开发岗位的就业率和薪资中位数。"
+    },
+    {
+      "turn_id": "05",
+      "event_type": "ai_response",
+      "speaker": "AI",
+      "target": "Bob",
+      "action_type": "direct_answer",
+      "text": "根据数据显示，45岁前端开发岗位的就业率为23%，平均薪资为48000港元每月。"
+    },
+    {
+      "turn_id": "06",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "OMG.这么低吗，我现在的工资都有6万港元一个月。看来盲目辞职再去找工作并不是一个明智的选择。"
+    },
+    {
+      "turn_id": "07",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "是啊，现在大环境不好，维持工作稳定是最关键的。如果你仍然想要额外的收入，可以试试做一下副业？"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "副业？具体有什么范畴啊？"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "据我所知，你可以试着去找一下网页设计相关的外包？或者在网上开店帮别人做个人网页之类的。你可以用AI查查看。"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "action_execution",
+      "text": "开始查找：前端开发工程师可以做的副业。重点搜索网页制作外包、个人网站搭建等相关职位。"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "好的，我看到AI给我的这个list了，我去投投简历试一试。谢了。"
+    }
+  ]
+}

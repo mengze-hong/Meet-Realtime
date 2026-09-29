@@ -1,0 +1,104 @@
+{
+  "scenario_id": 6,
+  "scenario_title": "餐厅选择",
+  "metadata": {
+    "target_group": "Z世代",
+    "intent_l1": "分析规划与建议",
+    "intent_l2": "计划制定",
+    "task_labels": [
+      "策略规划",
+      "知识问答",
+      "信息检索"
+    ]
+  },
+  "script": [
+    {
+      "turn_id": "01",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "咱难得见个面，走，找个餐厅吃个晚饭去？"
+    },
+    {
+      "turn_id": "02",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "好呀。你想吃什么？"
+    },
+    {
+      "turn_id": "03",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "我比较喜欢吃海鲜，你看要不我们去个日料店吃？我知道一家挺不错的店铺。"
+    },
+    {
+      "turn_id": "04",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "日料恐怕不太行。我吃生的肠胃受不了。煮熟的海鲜倒是可以，你考不考虑吃海鲜火锅呢？"
+    },
+    {
+      "turn_id": "05",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "AI",
+      "action_type": "query",
+      "text": "我昨天刚吃了火锅，不是很想再吃啊。算了，我问下AI有什么建议不？"
+    },
+    {
+      "turn_id": "06",
+      "event_type": "ai_response",
+      "speaker": "AI",
+      "target": "Alice",
+      "action_type": "direct_answer",
+      "text": "现在的情况是Alice想吃海鲜但不是很想吃火锅，Bob能吃海鲜但需要保证煮熟。我建议你们去找一家蒸汽海鲜吃，这样能吃到煮熟的海鲜，也不会像火锅那样太腻。"
+    },
+    {
+      "turn_id": "07",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "好主意啊，我觉得蒸汽海鲜不错，你觉得怎么样"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "我觉得没问题。那咱们现在研究一下去哪一家吧。我不太想走太远，500米以内的吧"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "action_execution",
+      "text": "开始查找：查找500米内的整齐海鲜餐厅。"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "嗯，我看AI在后台已经帮我们找到店铺了，我们走吧"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "好的，没问题。"
+    }
+  ]
+}
