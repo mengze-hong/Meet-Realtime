@@ -1,0 +1,112 @@
+{
+  "scenario_id": 2,
+  "scenario_title": "国庆旅游目的地规划",
+  "metadata": {
+    "target_group": "Z世代",
+    "intent_l1": "分析规划与建议",
+    "intent_l2": "计划制定",
+    "task_labels": [
+      "策略规划",
+      "知识问答",
+      "信息检索"
+    ]
+  },
+  "script": [
+    {
+      "turn_id": "01",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "马上国庆假期了，要不要出来玩？"
+    },
+    {
+      "turn_id": "02",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "可以呀。你想去哪里玩？"
+    },
+    {
+      "turn_id": "03",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "我觉得北京和上海吧，想去看看大城市的风景。"
+    },
+    {
+      "turn_id": "04",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "AI",
+      "action_type": "query",
+      "text": "这两个地方都可以，不过我想去个相对人少一点的地方，避开人流高峰。AI，你能帮我们查一下这两个城市在国庆期间的旅游人流量吗？"
+    },
+    {
+      "turn_id": "05",
+      "event_type": "ai_response",
+      "speaker": "AI",
+      "target": "Bob",
+      "action_type": "direct_answer",
+      "text": "根据携程往年的数据，北京的游客数量约为150万，上海则约为120万。北京的游客数量明显高于上海，可能会比较拥挤。建议你们去上海。"
+    },
+    {
+      "turn_id": "06",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "嗯嗯。那我们去上海吧，顺便去看看外滩的夜景。"
+    },
+    {
+      "turn_id": "07",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "好呀。除了外滩，你还有其他想去的地方吗？"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "上迪呗。不去迪士尼白来上海啊"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "行，我还想去城隍庙。咱们稍后定个计划，先查查这几个地方的门票价格和开放时间吧。"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "task_extraction",
+      "text": "识别到任务：查询上海外滩、上海迪士尼乐园和上海城隍庙的门票价格和开放时间。正在执行后台查找，并确保消息来源可靠。"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "好，就这么定。咱们也赶快看看机票吧，早点定便宜。"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "task_extraction",
+      "text": "补充任务：查询国庆期间香港往返上海的机票价格和航班信息。"
+    }
+  ]
+}

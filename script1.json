@@ -1,0 +1,120 @@
+{
+  "scenario_id": 1,
+  "scenario_title": "部门年终聚餐场地评估与预算核算",
+  "metadata": {
+    "target_group": "新锐白领",
+    "intent_l1": "分析规划与建议",
+    "intent_l2": "比较/选择建议",
+    "task_labels": [
+      "信息记录",
+      "知识问答",
+      "选择推荐"
+    ]
+  },
+  "script": [
+    {
+      "turn_id": "01",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "Bob，下周我们部门要举行30人的年终聚餐，总预算 15,000 元，你那边有选好的餐厅推荐吗？"
+    },
+    {
+      "turn_id": "02",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "我找了两家评价不错的。方案A是君悦酒店的自助餐，方案B是海悦酒楼的定制桌餐。"
+    },
+    {
+      "turn_id": "03",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "那我们先过一下方案A的明细吧，收费标准是什么？"
+    },
+    {
+      "turn_id": "04",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "方案A君悦酒店的自助餐是每人 350 元，不过因为我们人多，需要额外支付 2,000 元的场地包场费。"
+    },
+    {
+      "turn_id": "05",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "了解，AI算一下方案A总共多少钱，顺便算算占了我们 15,000 元总预算的百分之多少，整理个结论给我。"
+    },
+    {
+      "turn_id": "05",
+      "event_type": "ai_response",
+      "speaker": "AI",
+      "target": "Alice",
+      "action_type": "direct_answer",
+      "text": "方案A总费用：350 * 30 + 2000 = 12,500 元。计算预算占比：12500 / 15000 ≈ 83.33%。"
+    },
+    {
+      "turn_id": "06",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "然后，方案B的海悦酒楼按人数收费，每人 450 元，没有包场费，但是需要加收餐饮总额 10% 的服务费。"
+    },
+    {
+      "turn_id": "07",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "AI",
+      "action_type": "query",
+      "text": "AI，服务费算起来有点麻烦，你直接帮我们算一下方案B的总费用是多少？"
+    },
+    {
+      "turn_id": "07",
+      "event_type": "ai_response",
+      "speaker": "AI",
+      "target": "Alice",
+      "action_type": "direct_answer",
+      "text": "方案B的总费用为 14,850 元。计算过程：30人餐饮费为 450 * 30 = 13,500 元，服务费为 13,500 * 10% = 1,350 元。总计 13,500 + 1,350 = 14,850 元。"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "看来两家餐厅的总费用都没有超过我们 15,000 元的预算红线，方案A应该能省下不少钱。"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "AI",
+      "action_type": "query",
+      "text": "AI，结合刚刚的数据，方案A总共比方案B便宜多少钱？"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "ai_response",
+      "speaker": "AI",
+      "target": "Alice",
+      "action_type": "direct_answer",
+      "text": "方案A比方案B便宜 2,350 元。方案B总费用为 14,850 元，方案A总费用为 12,500 元，差价：14,850 - 12,500 = 2,350 元。"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "差距确实挺大的，那我们就方案A吧，剩下的两千多块预算用来买抽奖礼品。"
+    }
+  ]
+}
