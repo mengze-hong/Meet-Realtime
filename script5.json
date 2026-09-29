@@ -1,0 +1,112 @@
+{
+  "scenario_id": 5,
+  "scenario_title": "劝说领导更改合作方案",
+  "metadata": {
+    "target_group": "新锐白领",
+    "intent_l1": "分析规划与建议",
+    "intent_l2": "沟通建议",
+    "task_labels": [
+      "闲聊",
+      "建议咨询",
+      "日常交流"
+    ]
+  },
+  "script": [
+    {
+      "turn_id": "01",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "最近咱们老板要把新的办公室交给这个合作方装修，这公司不靠谱啊，感觉和他们合作会有很多问题。你觉得咱们要不要劝说老板换个合作方？"
+    },
+    {
+      "turn_id": "02",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "我觉得也是。不过老板是个比较固执的人，咱们要劝说他换合作方，不容易啊。你有什么好建议吗？"
+    },
+    {
+      "turn_id": "03",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "我觉得还是得以理服人吧。咱们可以先收集一些这家合作方的负面信息，整理成一份报告，然后找个合适的时机和老板沟通，提出换合作方的建议。"
+    },
+    {
+      "turn_id": "04",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "AI",
+      "action_type": "query",
+      "text": "这个提议不错。AI，帮我查一下这个公司之前出过的问题吧？我们看看怎么选择切入点"
+    },
+    {
+      "turn_id": "05",
+      "event_type": "ai_response",
+      "speaker": "AI",
+      "target": "Bob",
+      "action_type": "direct_answer",
+      "text": "这家公司在2025年装修时出现过比较严重的责任事故，造成了很大的财产损失，导致客户投诉不断。2026年又出现过工程延期和质量问题，客户对其服务态度也有不满的反馈。"
+    },
+    {
+      "turn_id": "06",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "嗯，你看，咱们的办公室装修时间是经不起拖延的。咱们这边的房租快到期了，万一出现工程延期，那罚金够咱们喝一壶的。这一点可以记下来，和老板说"
+    },
+    {
+      "turn_id": "06",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "action_execution",
+      "text": "正在记录：装修时间紧迫，与此合作方合作将有工程延期风险，有可能产生高额罚金。"
+    },
+    {
+      "turn_id": "07",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "嗯，我在补充一点。你看这家公司的资质也不是很全，万一出现安全问题，咱们也要担责任的。这个也和老板讲一下"
+    },
+    {
+      "turn_id": "07",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "action_execution",
+      "text": "正在记录：合作方资质不全，有可能出现安全事故。"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "嗯嗯。这两点给的没问题，我觉得应该可以说服老板了。"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "好，那咱们找一个合适的时间吧。我看明天下午老板在公司，咱们一块去找如何？"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "可以，我时间上没问题。"
+    }
+  ]
+}

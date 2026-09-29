@@ -1,0 +1,112 @@
+{
+  "scenario_id": 3,
+  "scenario_title": "Group Project分工制定",
+  "metadata": {
+    "target_group": "Z世代",
+    "intent_l1": "分析规划与建议",
+    "intent_l2": "计划制定",
+    "task_labels": [
+      "策略规划",
+      "知识问答",
+      "信息检索"
+    ]
+  },
+  "script": [
+    {
+      "turn_id": "01",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "咱们现在要做一个Group Project，做一个网站，得先分工。你觉得我们应该怎么分配任务？"
+    },
+    {
+      "turn_id": "02",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "嗯，具体要分前后端吧。你觉得你擅长前端还是后端？"
+    },
+    {
+      "turn_id": "03",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "AI",
+      "action_type": "query",
+      "text": "我其实不太清楚前后端具体各需要做什么，各有什么要求，AI能简单说一下吗？"
+    },
+    {
+      "turn_id": "04",
+      "event_type": "ai_response",
+      "speaker": "AI",
+      "target": "Alice",
+      "action_type": "direct_answer",
+      "text": "前端主要是网页在浏览器上呈现的UI设计，对用户体验和界面美观性要求较高，需要掌握HTML、CSS、JavaScript等技术。后端主要是服务器端的逻辑处理和数据库管理，对数据处理和系统架构要求较高，需要掌握Python、Java、Node.js等技术。"
+    },
+    {
+      "turn_id": "05",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "明白了。我html和css还行，JavaScript不太熟练。你呢？"
+    },
+    {
+      "turn_id": "06",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "我Python和JavaScript都还可以，Java不太熟练。那我们就你负责前端，我负责后端吧。不过，咱们还得考虑数据库的安全性，我密码学学的不太好，你那边怎么样？"
+    },
+    {
+      "turn_id": "07",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "我还比较擅长密码学，数据库的安全性我来负责吧。这样作为交换，你来负责做前端的交互呗？那个主要是用JavaScript做的。UI设计我能搞定。"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "可以。这个安排不错，能发挥我们各自的优势。咱们就这么定了。"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "task_extraction",
+      "text": "识别到任务：分工制定。Alice负责前端和数据库安全性，Bob负责后端和前端交互。"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "行。不过时间上咱们什么时间开始做？我这周末有点忙，可能要下周才能开始。这样的话咱们有一个星期的时间来完成。"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "那就下周一开整。到时候见。"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "action_execution",
+      "text": "写入日程：提醒Alice和Bob下周一开始做Group Project"
+    }
+  ]
+}

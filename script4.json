@@ -1,0 +1,104 @@
+{
+  "scenario_id": 4,
+  "scenario_title": "燃油车电动车选择",
+  "metadata": {
+    "target_group": "新锐白领",
+    "intent_l1": "娱乐互动",
+    "intent_l2": "闲聊",
+    "task_labels": [
+      "闲聊",
+      "知识问答",
+      "日常交流"
+    ]
+  },
+  "script": [
+    {
+      "turn_id": "01",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "哎，你说最近这些新能源车企挺火啊，都在不断推新车型，你觉得哪款车靠谱啊？"
+    },
+    {
+      "turn_id": "02",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "嗯，其实我是燃油车的拥护者，觉得燃油车的续航和加油便利性还是很不错的。你呢？"
+    },
+    {
+      "turn_id": "03",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "我觉得电车好一点。电动车充电便宜不少。而且，谁说电动车续航不行？现在很多电动车的续航都能达到 500 公里以上了，完全够日常使用了。"
+    },
+    {
+      "turn_id": "04",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "AI",
+      "action_type": "query",
+      "text": "真的假的？这个续航有虚标吧？AI，帮我看看这电动车续航能多少啊，有没有水分？"
+    },
+    {
+      "turn_id": "05",
+      "event_type": "ai_response",
+      "speaker": "AI",
+      "target": "Alice",
+      "action_type": "direct_answer",
+      "text": "目前，市面上大部分电动车的续航里程都在 300 公里到 600 公里之间，确实有些车型的续航里程可能存在虚标的情况，但也有一些车型的续航表现是比较真实的。建议在购车前查看官方续航数据和用户实际使用反馈，以便做出更准确的判断。"
+    },
+    {
+      "turn_id": "06",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "呐。你看，虚标只是个别情况。大部分的续航不是还可以吗？"
+    },
+    {
+      "turn_id": "07",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "不过这个里程还是不够长啊。你想想，咱们有时候出去玩，可能要跑个 800 公里甚至更远，这个续航就不够了。"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "AI",
+      "action_type": "query",
+      "text": "害，那你可以考虑增程车呢。增程车的电池续航可能只有 200 公里左右，但是它有一个小型的燃油发动机作为备用，可以在电池电量耗尽时提供额外的续航。有的车型甚至可以达到 1,000 公里以上的总续航。AI，你帮我查一下增程车的续航情况吧。"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "ai_response",
+      "speaker": "AI",
+      "target": "Alice",
+      "action_type": "direct_answer",
+      "text": "目前，市面上大部分增程车，例如小米鹏程、问界M9的续航里程都在800公里以上。比亚迪部分车型可以做到1500公里续航。"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "哇塞那真不错啊，咱找个4S店去试驾一下吧。等下一起看看哪个品牌开放试驾。"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "task_extraction",
+      "text": "识别到任务：查询增程车品牌的试驾信息，包括小米鹏程、问界M9和比亚迪的试驾活动。"
+    }
+  ]
+}
