@@ -1,13 +1,13 @@
 {
-  "scenario_id": 1,
-  "scenario_title": "智能洗地机选购与参数对比",
+  "scenario_id": 17,
+  "scenario_title": "期末算法课程复习与资料整理",
   "metadata": {
-    "target_group": "资深中产",
+    "target_group": "Z世代",
     "intent_l1": "分析规划与建议",
-    "intent_l2": "比较/选择建议",
+    "intent_l2": "计划制定",
     "task_labels": [
       "策略规划",
-      "商品咨询",
+      "教学辅导",
       "信息检索"
     ]
   },
@@ -18,7 +18,7 @@
       "speaker": "Alice",
       "target": "Bob",
       "action_type": "speak",
-      "text": "家里旧吸尘器吸力不够了，这次想换个带自清洁功能的智能洗地机。"
+      "text": "下周考算法分析与设计，动态规划那几道大题我还没彻底弄懂。"
     },
     {
       "turn_id": "02",
@@ -26,7 +26,7 @@
       "speaker": "Bob",
       "target": "Alice",
       "action_type": "speak",
-      "text": "行啊，现在的洗地机还能热烘自干，确实方便很多。"
+      "text": "动规确实挺绕的，这玩意一步错步步错，状态转移方程一旦写错整道题就零分了。"
     },
     {
       "turn_id": "03",
@@ -34,7 +34,7 @@
       "speaker": "Alice",
       "target": "Bob",
       "action_type": "speak",
-      "text": "那你对比一下市面上热销的几款洗地机，做个对比清单吧，比比价格和功能。"
+      "text": "哎，要不你去梳理一下老师上课讲过的动规经典题型，做个复习提纲？我到时候也看看"
     },
     {
       "turn_id": "03",
@@ -42,7 +42,7 @@
       "speaker": "AI",
       "target": null,
       "action_type": "task_extraction",
-      "text": "识别委托：Alice 交给 Bob 的任务是“智能洗地机选购与参数对比攻略”。立即后台查询热销型号、吸力大小、自烘干功能及价格区间；保持静默。"
+      "text": "识别委托：Alice 交给 Bob 的任务是“动态规划经典题型复习提纲”。立即后台整理题型分类、状态转移方程推导步骤；静默准备。"
     },
     {
       "turn_id": "04",
@@ -50,7 +50,7 @@
       "speaker": "Bob",
       "target": "Alice",
       "action_type": "speak",
-      "text": "好，我等下去check下各大品牌的旗舰型号参数。"
+      "text": "没问题，我待会把几类常见题型归纳一下。"
     },
     {
       "turn_id": "05",
@@ -58,7 +58,7 @@
       "speaker": "Alice",
       "target": "Bob",
       "action_type": "speak",
-      "text": "我们预算在 2500 到 3500 元之间，重点看防缠绕和滚刷烘干效果。"
+      "text": "别忘加上01背包问题和最长公共子序列，把推导公式写全。老师课上提了一嘴要考。"
     },
     {
       "turn_id": "05",
@@ -66,7 +66,7 @@
       "speaker": "AI",
       "target": null,
       "action_type": "action_execution",
-      "text": "补充任务：将“预算2500-3500元、防毛发缠绕、热烘自干”设为筛选条件更新至对比表格"
+      "text": "补充任务：将“01背包、完全背包、最长公共子序列（LCS）推导公式”加入提纲重点。"
     },
     {
       "turn_id": "06",
@@ -74,7 +74,7 @@
       "speaker": "Bob",
       "target": "Alice",
       "action_type": "speak",
-      "text": "我看好多人推荐戴森最新的那款洗地机，说吸力和烘干都不错。"
+      "text": "对了，课上讲的矩阵连乘问题的备忘录法，你还有印象吗？好像和你说的这两个问题有相似之处，但我记得也不完全一样。"
     },
     {
       "turn_id": "07",
@@ -82,7 +82,7 @@
       "speaker": "Alice",
       "target": "AI",
       "action_type": "query",
-      "text": " AI，（顿了顿）刚刚 Bob 说的那个品牌型号在我们预算范围内吗？性价比怎么样？"
+      "text": " 我也忘了。AI，刚刚 Bob 说的那个备忘录法和自底向上的动态规划有什么区别？"
     },
     {
       "turn_id": "08",
@@ -90,7 +90,7 @@
       "speaker": "AI",
       "target": "Alice",
       "action_type": "direct_answer",
-      "text": "刚刚 Bob 提到的戴森最新款售价约为 2999 元，在您的预算范围内。其防毛发缠绕和高温热烘表现突出。我已将它与同价位的海尔、松下品牌做了横向对比，正在整理参数表格。"
+      "text": "刚刚 Bob 说的备忘录法是自顶向下利用递归加缓存表格，只计算需要的子问题；而标准动态规划是自底向上填表，计算所有子问题。我已将两者的对比和伪代码写入复习提纲。"
     },
     {
       "turn_id": "09",
@@ -98,7 +98,7 @@
       "speaker": "Bob",
       "target": "Alice",
       "action_type": "speak",
-      "text": "标注一下水箱容量和续航时间吧。这两点也纳入考虑。"
+      "text": "你那提纲里也放两道历年期末真题的求解步骤吧"
     },
     {
       "turn_id": "10",
@@ -106,7 +106,7 @@
       "speaker": "Alice",
       "target": "Bob",
       "action_type": "speak",
-      "text": "对，还有售后保修政策和耗材更换成本也写一下。"
+      "text": "行，我顺便把空间复杂度优化的技巧也标注一下。这两年考了不少"
     },
     {
       "turn_id": "10",
@@ -114,7 +114,7 @@
       "speaker": "AI",
       "target": null,
       "action_type": "task_extraction",
-      "text": "补充任务：补充水箱容量、续航、保修及耗材成本，完成选购对比攻略交由 Bob 查阅。"
+      "text": "补充任务：补充真题解析，并标注“空间复杂度优化”为“高频考点”，完成提纲草稿供 Bob 查看。"
     }
   ]
 }

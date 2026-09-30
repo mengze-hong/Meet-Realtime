@@ -1,0 +1,128 @@
+{
+  "scenario_id": 11,
+  "scenario_title": "产品线上发布会筹备分工",
+  "metadata": {
+    "target_group": "新锐白领",
+    "intent_l1": "内容生成",
+    "intent_l2": "正式/实用写作",
+    "task_labels": [
+      "内容改写与处理",
+      "个人写作或沟通",
+      "编辑或点评文本"
+    ]
+  },
+  "script": [
+    {
+      "turn_id": "01",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "下周三的线上新品发布会时间太紧了，流程还没完全敲定。"
+    },
+    {
+      "turn_id": "02",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "是啊，环节太多，PPT 和嘉宾致辞脚本都得赶快落实。"
+    },
+    {
+      "turn_id": "03",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "Bob，晚点你汇总一下各组进度，整理一份发布会筹备清单和时间表吧。"
+    },
+    {
+      "turn_id": "03",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "task_extraction",
+      "text": "识别委托：Alice 交给 Bob 的任务是“线上发布会筹备清单与时间表”。立即后台提取任务项、时间节点与责任人，准备生成结构化表格。"
+    },
+    {
+      "turn_id": "04",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "好，我稍后把各组提交的进度表整理出一份总清单。"
+    },
+    {
+      "turn_id": "05",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "好的，这个清单里重点标注 PPT 终稿提交和直播设备联调这两个关键节点。"
+    },
+    {
+      "turn_id": "05",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "action_execution",
+      "text": "将“PPT 终稿提交、直播设备联调”设为重要节点，更新后台筹备时间表。"
+    },
+    {
+      "turn_id": "06",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "对了，市场部那边想在开头加一个3分钟的品牌宣传片环节。"
+    },
+    {
+      "turn_id": "07",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "AI",
+      "action_type": "query",
+      "text": " AI，刚刚 Bob 说的那个宣传片环节放在开场会不会太占时间？？"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "ai_response",
+      "speaker": "AI",
+      "target": "Alice",
+      "action_type": "direct_answer",
+      "text": "刚刚 Bob 说的3分钟开场宣传片可以作为嘉宾入场缓冲，不会挤占主讲环节。我已经把该环节加入流程表，并预留了2分钟主持人过场串词。"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "行，你回头把具体时间标到表里吧，精确到分钟。"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "action_execution",
+      "text": "增加时间戳到时间表中，确保每个活动的时间能按分钟级别精准控制。完成后交给Alice进一步处理。"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "好。这个时间安排的挺紧，我再准备一份应急预案清单，比如网络卡顿怎么处理。"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "action_execution",
+      "text": "补充应急预案应对网络卡顿等问题，生成完整发布会筹备清单并提交给 ALice和Bob 确认。"
+    }
+  ]
+}

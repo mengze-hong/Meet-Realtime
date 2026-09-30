@@ -18,7 +18,7 @@
       "speaker": "Alice",
       "target": "Bob",
       "action_type": "speak",
-      "text": "马上国庆假期了，要不要出来玩？"
+      "text": "马上国庆假期了，要不要出来玩？国庆不想一直待在香港，太无聊了。"
     },
     {
       "turn_id": "02",

@@ -1,0 +1,112 @@
+{
+  "scenario_id": 13,
+  "scenario_title": "超市进货讨论",
+  "metadata": {
+    "target_group": "都市蓝领",
+    "intent_l1": "分析规划与建议",
+    "intent_l2": "比较/选择建议",
+    "task_labels": [
+      "选择推荐",
+      "知识问答",
+      "信息检索"
+    ]
+  },
+  "script": [
+    {
+      "turn_id": "01",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "咱们超市没有牛奶了，咱们要不要再进一批货啊？"
+    },
+    {
+      "turn_id": "02",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "可以啊，你觉得进哪个牌子好一点呢？"
+    },
+    {
+      "turn_id": "03",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "AI",
+      "action_type": "query",
+      "text": "我觉得咱们做生意最重要的还是看销量。AI，帮我查一下现在卖的最好的牛奶品牌。"
+    },
+    {
+      "turn_id": "04",
+      "event_type": "ai_response",
+      "speaker": "AI",
+      "target": "Alice",
+      "action_type": "direct_answer",
+      "text": "现在市面上销量最高的牛奶品牌是特仑苏有机奶，他的销量、客户好评率均是行业领先水平。"
+    },
+    {
+      "turn_id": "05",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "那我们就进这个牌子的货吧？你回头整理一个华北地区的供应商清单，咱们去联系一下他们。"
+    },
+    {
+      "turn_id": "05",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "action_execution",
+      "text": "开始查找：华北地区特仑苏有机奶的供货商列表以及对应联系方式，完成后交由Alice审核。"
+    },
+    {
+      "turn_id": "06",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "好的，我等下去搞一下。那你去进货？"
+    },
+    {
+      "turn_id": "07",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "可以，我什么时间去呢？"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "你10月1号之前去吧，咱们得在十一小长假之前把货补上。"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "明白，那你做清单的时候，别忘了加一条，保证这些供应商可以在十月一之前出货。别让我跑空。"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "action_execution",
+      "text": "增加约束：筛选供应商列表中可以在十月一之前供应产品的联系人"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "好的，没问题。"
+    }
+  ]
+}

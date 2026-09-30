@@ -74,15 +74,15 @@
       "speaker": "Bob",
       "target": "Alice",
       "action_type": "speak",
-      "text": "可以。这个安排不错，能发挥我们各自的优势。咱们就这么定了。"
+      "text": "可以。这个安排不错，能发挥我们各自的优势。你晚点整理一下分工和时间表。"
     },
     {
       "turn_id": "08",
       "event_type": "ai_background",
       "speaker": "AI",
       "target": null,
-      "action_type": "task_extraction",
-      "text": "识别到任务：分工制定。Alice负责前端和数据库安全性，Bob负责后端和前端交互。"
+      "action_type": "action_execution",
+      "text": "执行任务：完成分工与时间表制定。Alice负责前端和数据库安全性，Bob负责后端和前端交互。"
     },
     {
       "turn_id": "09",

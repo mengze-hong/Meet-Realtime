@@ -1,14 +1,14 @@
 {
-  "scenario_id": 1,
-  "scenario_title": "智能洗地机选购与参数对比",
+  "scenario_id": 11,
+  "scenario_title": "周末露营地点与装备攻略",
   "metadata": {
-    "target_group": "资深中产",
+    "target_group": "新锐白领",
     "intent_l1": "分析规划与建议",
-    "intent_l2": "比较/选择建议",
+    "intent_l2": "计划制定",
     "task_labels": [
       "策略规划",
-      "商品咨询",
-      "信息检索"
+      "知识问答",
+      "选择推荐"
     ]
   },
   "script": [
@@ -18,7 +18,7 @@
       "speaker": "Alice",
       "target": "Bob",
       "action_type": "speak",
-      "text": "家里旧吸尘器吸力不够了，这次想换个带自清洁功能的智能洗地机。"
+      "text": "最近工作加班太累了，周末想找个郊区能看星空的地方露营放松下。"
     },
     {
       "turn_id": "02",
@@ -26,7 +26,7 @@
       "speaker": "Bob",
       "target": "Alice",
       "action_type": "speak",
-      "text": "行啊，现在的洗地机还能热烘自干，确实方便很多。"
+      "text": "好啊，找个环境清静点的营地，别太折腾就行。"
     },
     {
       "turn_id": "03",
@@ -34,7 +34,7 @@
       "speaker": "Alice",
       "target": "Bob",
       "action_type": "speak",
-      "text": "那你对比一下市面上热销的几款洗地机，做个对比清单吧，比比价格和功能。"
+      "text": "Bob，晚点你搜一下郊区适合露营看星空的营地，做个攻略吧。"
     },
     {
       "turn_id": "03",
@@ -42,7 +42,7 @@
       "speaker": "AI",
       "target": null,
       "action_type": "task_extraction",
-      "text": "识别委托：Alice 交给 Bob 的任务是“智能洗地机选购与参数对比攻略”。立即后台查询热销型号、吸力大小、自烘干功能及价格区间；保持静默。"
+      "text": "Alice 交给 Bob 的任务是“郊区星空露营攻略”。立即开始后台查找符合条件的营地地点、配套设施及交通路线；先在后台准备，不冒充 Bob 回复。"
     },
     {
       "turn_id": "04",
@@ -50,7 +50,7 @@
       "speaker": "Bob",
       "target": "Alice",
       "action_type": "speak",
-      "text": "好，我等下去check下各大品牌的旗舰型号参数。"
+      "text": "行，我等会查一下发给你。"
     },
     {
       "turn_id": "05",
@@ -58,7 +58,7 @@
       "speaker": "Alice",
       "target": "Bob",
       "action_type": "speak",
-      "text": "我们预算在 2500 到 3500 元之间，重点看防缠绕和滚刷烘干效果。"
+      "text": "我们最好控制在市区车程两小时以内，营地要有独立洗手间和淋浴间。"
     },
     {
       "turn_id": "05",
@@ -66,7 +66,7 @@
       "speaker": "AI",
       "target": null,
       "action_type": "action_execution",
-      "text": "补充任务：将“预算2500-3500元、防毛发缠绕、热烘自干”设为筛选条件更新至对比表格"
+      "text": "把“车程2小时内、配备洗手间和淋浴间”加入攻略约束，继续核对营地配套与交通用时。"
     },
     {
       "turn_id": "06",
@@ -74,7 +74,7 @@
       "speaker": "Bob",
       "target": "Alice",
       "action_type": "speak",
-      "text": "我看好多人推荐戴森最新的那款洗地机，说吸力和烘干都不错。"
+      "text": "我想到南山顶上那个星空营地，听说设施挺全的。"
     },
     {
       "turn_id": "07",
@@ -82,7 +82,7 @@
       "speaker": "Alice",
       "target": "AI",
       "action_type": "query",
-      "text": " AI，（顿了顿）刚刚 Bob 说的那个品牌型号在我们预算范围内吗？性价比怎么样？"
+      "text": "AI，刚刚 Bob 说的那个营地离我们远吗？配套怎么样？"
     },
     {
       "turn_id": "08",
@@ -90,7 +90,7 @@
       "speaker": "AI",
       "target": "Alice",
       "action_type": "direct_answer",
-      "text": "刚刚 Bob 提到的戴森最新款售价约为 2999 元，在您的预算范围内。其防毛发缠绕和高温热烘表现突出。我已将它与同价位的海尔、松下品牌做了横向对比，正在整理参数表格。"
+      "text": "刚刚 Bob 说的南山星空营地，距离市区大约 1.5 小时车程，配备有公共洗手间和热水淋浴房。我正在整理详细的路线与营地收费对比，会一并写入攻略草稿。"
     },
     {
       "turn_id": "09",
@@ -98,7 +98,7 @@
       "speaker": "Bob",
       "target": "Alice",
       "action_type": "speak",
-      "text": "标注一下水箱容量和续航时间吧。这两点也纳入考虑。"
+      "text": "那攻略里顺便列一下我们还需要自备什么装备。"
     },
     {
       "turn_id": "10",
@@ -106,15 +106,15 @@
       "speaker": "Alice",
       "target": "Bob",
       "action_type": "speak",
-      "text": "对，还有售后保修政策和耗材更换成本也写一下。"
+      "text": "好，把帐篷、防潮垫和夜间保暖睡袋都写进去吧。"
     },
     {
       "turn_id": "10",
       "event_type": "ai_background",
       "speaker": "AI",
       "target": null,
-      "action_type": "task_extraction",
-      "text": "补充任务：补充水箱容量、续航、保修及耗材成本，完成选购对比攻略交由 Bob 查阅。"
+      "action_type": "action_execution",
+      "text": "补充任务：补充装备清单（帐篷、防潮垫、保暖睡袋），完成攻略草稿后提交给 Bob 查看。"
     }
   ]
 }

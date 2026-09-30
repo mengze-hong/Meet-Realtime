@@ -1,0 +1,112 @@
+{
+  "scenario_id": 15,
+  "scenario_title": "资产管理决策",
+  "metadata": {
+    "target_group": "资深中产",
+    "intent_l1": "分析规划与建议",
+    "intent_l2": "计划制定",
+    "task_labels": [
+      "选择推荐",
+      "知识问答",
+      "策略规划"
+    ]
+  },
+  "script": [
+    {
+      "turn_id": "01",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "哎，这么多年难得事业稳定了，我现在一直在想怎么去做一点投资。"
+    },
+    {
+      "turn_id": "02",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "哦，那你有什么考虑的具体投资哪些方面吗？"
+    },
+    {
+      "turn_id": "03",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "我现在在考虑股票和基金这两种方式吧。这个怎么选啊？"
+    },
+    {
+      "turn_id": "04",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "这个要根据你对风险的可接受程度。股票肯定收入高，但风险也大。基金就稳定一点。"
+    },
+    {
+      "turn_id": "05",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "AI",
+      "action_type": "query",
+      "text": "奥奥，这么说我可以最高接受50%的投资基金损失。毕竟就算投资的钱没了，我也有别的钱托底。AI，帮我想一下投资策略"
+    },
+    {
+      "turn_id": "06",
+      "event_type": "ai_response",
+      "speaker": "AI",
+      "target": "Alice",
+      "action_type": "direct_answer",
+      "text": "根据你的回复，你属于较为激进的投资人，愿意以高风险搏高利润。我建议你将70%的资金投入股票做风险投资，同时将剩余30%放入基金稳健投资，来对冲风险。"
+    },
+    {
+      "turn_id": "07",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "明白了。不过Bob你有知道什么比较热门的基金或者股票吗？"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "我觉得股票的话你可以看看科技股，看看特斯拉 英伟达 苹果。基金可以买恒生指数相关的。"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "行，我回头让AI给我列个清单，合适的时候让他提醒我买入吧。"
+    },
+     {
+      "turn_id": "09",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "action_execution",
+      "text": "执行任务：将Bob提到的和其他热门科技类股票列入观察清单，并进行实时监控，发现合适的买入点时提醒Alice买入。"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "哎对了，你也可以关注一下IPO。最近Anthropic马上上市，你也可以让AI帮你盯着看看。"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "action_execution",
+      "text": "补充任务：将Anthropic等IPO暂时列入Alice的清单。若Alice感兴趣，则根据上市时间按时提醒Alice"
+    }
+  ]
+}

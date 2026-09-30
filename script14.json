@@ -1,0 +1,112 @@
+{
+  "scenario_id": 14,
+  "scenario_title": "相机购买选择",
+  "metadata": {
+    "target_group": "Z世代",
+    "intent_l1": "分析规划与建议",
+    "intent_l2": "比较/选择建议",
+    "task_labels": [
+      "选择推荐",
+      "知识问答",
+      "信息检索"
+    ]
+  },
+  "script": [
+    {
+      "turn_id": "01",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "我最近挺喜欢摄影的，现在想买一台自己的相机练练手。"
+    },
+    {
+      "turn_id": "02",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "哦，那你有什么考虑的类型吗？"
+    },
+    {
+      "turn_id": "03",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "我现在在考虑单反相机还是微单相机，但是现在拿不定主意，这两个各有各的好处吧。"
+    },
+    {
+      "turn_id": "04",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "那得看你想拍什么了，他们在不同功能上各有优势吧。"
+    },
+    {
+      "turn_id": "05",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "AI",
+      "action_type": "query",
+      "text": "我感觉我更喜欢去拍飞鸟这些，比较喜欢捕捉瞬间动作的细节。AI，我的情况适合买哪种相机啊？"
+    },
+    {
+      "turn_id": "06",
+      "event_type": "ai_response",
+      "speaker": "AI",
+      "target": "Alice",
+      "action_type": "direct_answer",
+      "text": "对于捕捉瞬间类、需要较高快门速度的摄影，单反相机是更优选择。建议你去选择一款单反相机，并搭配好合适的镜头使用。"
+    },
+    {
+      "turn_id": "07",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "嗯，看来单反相机比较适合我。这个镜头怎么配你知道吗？"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "user_speech",
+      "speaker": "Bob",
+      "target": "Alice",
+      "action_type": "speak",
+      "text": "啊，你可以选择一个长焦镜头，等会你上网搜一下，列个清单比较一下性能和价格选一下吧。"
+    },
+    {
+      "turn_id": "08",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "action_execution",
+      "text": "开始查找：市面上不同价格、不同表现的长焦镜头，正在制作对比清单，完成后交由Alice审核。"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "行，我等会把这些加个购物车，给你看看，帮我选一下可以吗？"
+    },
+    {
+      "turn_id": "09",
+      "event_type": "ai_background",
+      "speaker": "AI",
+      "target": null,
+      "action_type": "action_execution",
+      "text": "补充任务：将清单中的镜头加入购物车，并把链接share给Bob供Bob帮Alice筛选。"
+    },
+    {
+      "turn_id": "10",
+      "event_type": "user_speech",
+      "speaker": "Alice",
+      "target": "Bob",
+      "action_type": "speak",
+      "text": "OK. 弄完了发给我就好"
+    }
+  ]
+}
